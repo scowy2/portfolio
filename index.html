@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кирилл — Видеомонтаж, который удерживает внимание</title>
+    <meta name="description" content="Профессиональный видеомонтаж для блогеров и брендов. Динамичный монтаж, который увеличивает просмотры и вовлечение.">
+    <meta property="og:title" content="Кирилл — Видеомонтаж">
+    <meta property="og:description" content="Монтаж видео, которые удерживают внимание.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="nav__logo">SCOWY</a>
+            <div class="nav__links">
+                <a href="#works" class="nav__link">Работы</a>
+                <a href="#results" class="nav__link">Результаты</a>
+                <a href="#why-me" class="nav__link">Почему я</a>
+                <a href="#contact" class="nav__link nav__link--cta">Связаться</a>
+            </div>
+            <button class="nav__burger" id="nav-burger" aria-label="Открыть меню">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__links">
+            <a href="#works" class="mobile-menu__link">Работы</a>
+            <a href="#results" class="mobile-menu__link">Результаты</a>
+            <a href="#why-me" class="mobile-menu__link">Почему я</a>
+            <a href="#contact" class="mobile-menu__link mobile-menu__link--cta">Связаться</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__glow"></div>
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__badge"><span class="hero__badge-dot"></span>Открыт к новым проектам</div>
+                <h1 class="hero__title">Монтаж видео,<br><span class="hero__title-dim">которые удерживают</span><br>внимание</h1>
+                <p class="hero__subtitle">Помогаю блогерам и брендам увеличивать просмотры и вовлечение через динамичный монтаж</p>
+                <div class="hero__actions">
+                    <a href="https://t.me/Montro12" target="_blank" rel="noopener" class="btn btn--primary" id="hero-cta">
+                        Обсудить проект
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#works" class="btn btn--ghost" id="hero-works">Смотреть работы</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll"><div class="hero__scroll-line"></div></div>
+    </section>
+
+    <!-- Works -->
+    <section class="works" id="works">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Портфолио</span>
+                <h2 class="section-title">Мои работы</h2>
+                <p class="section-subtitle">Нажми на превью, чтобы включить звук и просмотреть работу</p>
+            </div>
+            <div class="works__tabs" data-animate>
+                <button class="works__tab active" data-target="vertical">Вертикальные</button>
+                <button class="works__tab" data-target="horizontal">Горизонтальные</button>
+            </div>
+            
+            <!-- Vertical Grid -->
+            <div class="works__grid works__grid--vertical active" id="vertical-works">
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap">
+                        <video src="assets/work1.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="white"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap">
+                        <video src="assets/work2.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="white"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap">
+                        <video src="assets/work3.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="white"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal Grid -->
+            <div class="works__grid works__grid--horizontal" id="horizontal-works" style="display: none;">
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap works__video-wrap--horizontal">
+                        <video src="assets/work 1.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="white"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap works__video-wrap--horizontal">
+                        <video src="assets/work 2.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="white"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="cases" id="results">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Кейсы</span>
+                <h2 class="section-title">Результат, а не просто монтаж</h2>
+                <p class="section-subtitle">Реальные проекты с измеримыми результатами</p>
+            </div>
+
+            <div class="cases__list">
+                <!-- Case 1: Школа EXtremum -->
+                <div class="case" data-animate>
+                    <div class="case__header">
+                        <div class="case__header-left">
+                            <span class="case__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></span>
+                            <div>
+                                <h3 class="case__name">Школа EXtremum</h3>
+                                <span class="case__subs">53 тыс. подписчиков</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case__content">
+                        <div class="case__block">
+                            <span class="case__label">Задача</span>
+                            <p class="case__text">Систематизировать видеоконтент и привести его к единому стилю подачи.</p>
+                        </div>
+                        <div class="case__divider"></div>
+                        <div class="case__block">
+                            <span class="case__label case__label--result">Результат</span>
+                            <p class="case__text">Более целостный визуальный стиль канала. Улучшение восприятия образовательного контента. Повышение удержания зрителя за счёт темпа и структуры.</p>
+                        </div>
+                    </div>
+                    <div class="case__links">
+                        <a href="https://youtube.com/shorts/riuEMbNc7lY" target="_blank" rel="noopener" class="case__link-btn">Смотреть Reels 1 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <a href="https://youtube.com/shorts/gLAfTthnNqI" target="_blank" rel="noopener" class="case__link-btn">Смотреть Reels 2 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <a href="https://youtu.be/z-yNZpCId-A" target="_blank" rel="noopener" class="case__link-btn">Смотреть Подкаст <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                    </div>
+                </div>
+                <!-- Case 2: valeriarti -->
+                <div class="case" data-animate>
+                    <div class="case__header">
+                        <div class="case__header-left">
+                            <span class="case__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></span>
+                            <div>
+                                <h3 class="case__name">valeriarti</h3>
+                                <span class="case__subs">64,4 тыс. подписчиков</span>
+                            </div>
+                        </div>
+                        <div class="case__stat-badge">
+                            <span class="case__stat-value">72K</span>
+                            <span class="case__stat-label">просмотров</span>
+                        </div>
+                    </div>
+                    <div class="case__content">
+                        <div class="case__block">
+                            <span class="case__label">Задача</span>
+                            <p class="case__text">Охваты стояли на месте — 5–6 тыс. просмотров на ролик, контент не попадал в рекомендации</p>
+                        </div>
+                        <div class="case__divider"></div>
+                        <div class="case__block">
+                            <span class="case__label case__label--result">Результат</span>
+                            <p class="case__text">Увеличил средний охват с 5–6 тыс. до 72 тыс. просмотров за счёт переработки хука, темпа и удержания</p>
+                        </div>
+                    </div>
+                    <div class="case__links">
+                        <a href="https://www.instagram.com/reel/DUGHbV2CL4Q/" target="_blank" rel="noopener" class="case__link-btn">Смотреть Reels <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                    </div>
+                </div>
+                <!-- Case 3: Михаил Гребенюк -->
+                <div class="case" data-animate>
+                    <div class="case__header">
+                        <div class="case__header-left">
+                            <span class="case__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></span>
+                            <div>
+                                <h3 class="case__name">Михаил Гребенюк</h3>
+                                <span class="case__subs">692 тыс. подписчиков</span>
+                            </div>
+                        </div>
+                        <div class="case__stat-badge">
+                            <span class="case__stat-value">164K</span>
+                            <span class="case__stat-label">просмотров</span>
+                        </div>
+                    </div>
+                    <div class="case__content">
+                        <div class="case__block">
+                            <span class="case__label">Задача</span>
+                            <p class="case__text">Создание серии роликов в едином визуальном стиле для Instagram Reels.</p>
+                        </div>
+                        <div class="case__divider"></div>
+                        <div class="case__block">
+                            <span class="case__label case__label--result">Решение</span>
+                            <p class="case__text">Серия роликов в единой стилистике. Усиление визуальной целостности контента.</p>
+                        </div>
+                    </div>
+                    <div class="case__links">
+                        <a href="https://www.youtube.com/shorts/6n83r3lpunY" target="_blank" rel="noopener" class="case__link-btn">Смотреть Shorts <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                    </div>
+                </div>
+                <!-- Case 4: Андреиич -->
+                <div class="case" data-animate>
+                    <div class="case__header">
+                        <div class="case__header-left">
+                            <span class="case__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></span>
+                            <div>
+                                <h3 class="case__name">Андреиич</h3>
+                                <span class="case__subs">Instagram Reels</span>
+                            </div>
+                        </div>
+                        <div class="case__stat-badge">
+                            <span class="case__stat-value">63K+</span>
+                            <span class="case__stat-label">просмотров</span>
+                        </div>
+                    </div>
+                    <div class="case__content">
+                        <div class="case__block">
+                            <span class="case__label">Задача</span>
+                            <p class="case__text">Создание монтажного решения с упором на вирусность и удержание внимания.</p>
+                        </div>
+                        <div class="case__divider"></div>
+                        <div class="case__block">
+                            <span class="case__label case__label--result">Результат</span>
+                            <p class="case__text">Усиление органического охвата и повышение вовлечения аудитории.</p>
+                        </div>
+                    </div>
+                    <div class="case__links">
+                        <a href="https://www.instagram.com/reel/DW6cli8jHbq/" target="_blank" rel="noopener" class="case__link-btn">Смотреть Reels <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Why Me -->
+    <section class="why-me" id="why-me">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Преимущества</span>
+                <h2 class="section-title">Почему выбирают меня</h2>
+                <p class="section-subtitle">Работаю с разными форматами видео — понимаю, как удерживать внимание и делать контент, который досматривают</p>
+            </div>
+            <div class="why-me__grid">
+                <div class="why-me__card" data-animate>
+                    <div class="why-me__card-number">01</div>
+                    <h3 class="why-me__card-title">Быстрые сроки</h3>
+                    <p class="why-me__card-text">Чёткие дедлайны — без задержек и срыва сроков. Вы всегда знаете, когда получите готовый ролик.</p>
+                </div>
+                <div class="why-me__card" data-animate>
+                    <div class="why-me__card-number">02</div>
+                    <h3 class="why-me__card-title">Чистый монтаж</h3>
+                    <p class="why-me__card-text">Современная подача, плавные переходы и продуманный ритм. Никакой «кашицы» из эффектов.</p>
+                </div>
+                <div class="why-me__card" data-animate>
+                    <div class="why-me__card-number">03</div>
+                    <h3 class="why-me__card-title">В тренде</h3>
+                    <p class="why-me__card-text">Слежу за актуальными трендами монтажа, понимаю алгоритмы платформ и делаю контент, который продвигается.</p>
+                </div>
+                <div class="why-me__card" data-animate>
+                    <div class="why-me__card-number">04</div>
+                    <h3 class="why-me__card-title">Разные форматы</h3>
+                    <p class="why-me__card-text">Reels, Shorts, YouTube, TikTok — работаю со всеми форматами и адаптирую монтаж под каждую платформу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__content" data-animate>
+                <img src="assets/photo.jpg" alt="Scowy" class="contact__photo">
+                <span class="section-label">Контакт</span>
+                <h2 class="section-title">Связаться</h2>
+                <p class="section-subtitle">Напишите мне, обсудим задачу и формат работы</p>
+                <a href="https://t.me/Montro12" target="_blank" rel="noopener" class="contact__tg-btn" id="contact-telegram">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Написать в Telegram
+                </a>
+                <p class="contact__handle">@Montro12</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container"><div class="footer__content"><span class="footer__copy">© 2025 Scowy. Все права защищены</span></div></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
